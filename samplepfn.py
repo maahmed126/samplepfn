@@ -1,6 +1,6 @@
 def handler(event,context):
 
-    kg=event['kg']
+    kg=event['queryStringParameters']['kg']
     lb=float(kg)*2.20462
     ans = str(kg) + " Kgs is " + str(round(lb, 2)) + " lbs\n"
 
